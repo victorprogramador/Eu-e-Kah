@@ -58,6 +58,23 @@ h1 {
   color: #d0006f;
 }
 
+#toggle-hearts {
+  background-color: #ff80ab;
+  border: none;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 3rem;
+}
+
+#toggle-hearts:hover {
+  background-color: #ff4f81;
+}
+
+/* animações */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -73,18 +90,6 @@ h1 {
   50% { transform: scale(1.05); }
 }
 
-@media (max-width: 600px) {
-  h1 {
-    font-size: 2rem;
-  }
-  .counter h2 {
-    font-size: 1.2rem;
-  }
-  .counter p {
-    font-size: 1rem;
-  }
-}
-
 /* corações flutuantes */
 .heart {
   position: fixed;
@@ -94,6 +99,7 @@ h1 {
   animation: floatUp 6s linear infinite;
   pointer-events: none;
   opacity: 0.7;
+  z-index: 0;
 }
 
 @keyframes floatUp {
@@ -104,5 +110,17 @@ h1 {
   100% {
     transform: translateY(-110vh) scale(1.5);
     opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .counter h2 {
+    font-size: 1.2rem;
+  }
+  .counter p {
+    font-size: 1rem;
   }
 }
