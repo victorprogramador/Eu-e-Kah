@@ -51,8 +51,16 @@ updateCountdown();
 updateMessage();
 
 document.getElementById("printBtn").addEventListener("click", () => {
-    window.print();
+    const container = document.querySelector(".container");
+
+    html2canvas(container).then(canvas => {
+        const link = document.createElement("a");
+        link.download = "captura_timer.png";
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+    });
 });
+
 
 document.getElementById("newDateForm").addEventListener("submit", function(e) {
     e.preventDefault();
