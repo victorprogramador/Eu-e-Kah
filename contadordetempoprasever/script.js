@@ -61,7 +61,14 @@ function setTargetDate(dateString, timeString) {
   document.getElementById("printBtn").addEventListener("click", () => {
     const container = document.querySelector(".container");
   
-    html2canvas(container).then(canvas => {
+    html2canvas(container, {
+      scrollX: 0,
+      scrollY: -window.scrollY,
+      windowWidth: document.documentElement.clientWidth,
+      windowHeight: document.documentElement.clientHeight,
+      useCORS: true,
+      scale: 2 // melhora a qualidade da imagem capturada
+    }).then(canvas => {
       const link = document.createElement("a");
       link.download = "captura_timer.png";
       link.href = canvas.toDataURL("image/png");
