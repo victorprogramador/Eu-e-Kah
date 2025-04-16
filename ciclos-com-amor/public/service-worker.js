@@ -1,13 +1,13 @@
 const CACHE_NAME = "ciclos-com-amor-v1";
 const FILES_TO_CACHE = [
-  "/",
-  "/index.html",
-  "/manifest.json",
-  "/icon-192.png",
-  "/icon-512.png",
-  "/src/main.jsx",
-  "/src/App.jsx",
-  "/src/index.css"
+  "/Eu-e-Kah/ciclos-com-amor/",
+  "/Eu-e-Kah/ciclos-com-amor/index.html",
+  "/Eu-e-Kah/ciclos-com-amor/manifest.json",
+  "/Eu-e-Kah/ciclos-com-amor/icon-192.png",
+  "/Eu-e-Kah/ciclos-com-amor/icon-512.png",
+  "/Eu-e-Kah/ciclos-com-amor/src/main.jsx",
+  "/Eu-e-Kah/ciclos-com-amor/src/App.jsx",
+  "/Eu-e-Kah/ciclos-com-amor/src/index.css"
 ];
 
 // Instala o service worker e faz o cache dos arquivos

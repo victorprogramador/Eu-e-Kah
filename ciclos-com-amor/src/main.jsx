@@ -12,6 +12,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 // Registro do service worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js');
+    navigator.serviceWorker.register('/Eu-e-Kah/ciclos-com-amor/service-worker.js');
   });
 }
