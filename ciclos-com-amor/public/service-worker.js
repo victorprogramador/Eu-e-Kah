@@ -3,8 +3,8 @@ const FILES_TO_CACHE = [
   "/Eu-e-Kah/ciclos-com-amor/",
   "/Eu-e-Kah/ciclos-com-amor/index.html",
   "/Eu-e-Kah/ciclos-com-amor/manifest.json",
-  "/Eu-e-Kah/ciclos-com-amor/icon-192.png",
-  "/Eu-e-Kah/ciclos-com-amor/icon-512.png",
+  "/Eu-e-Kah/ciclos-com-amor/public/icon-192.png",
+  "/Eu-e-Kah/ciclos-com-amor/public/icon-512.png",
   "/Eu-e-Kah/ciclos-com-amor/src/main.jsx",
   "/Eu-e-Kah/ciclos-com-amor/src/App.jsx",
   "/Eu-e-Kah/ciclos-com-amor/src/index.css"
