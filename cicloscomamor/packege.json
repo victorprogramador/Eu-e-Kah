@@ -1,0 +1,34 @@
+{
+    "name": "ciclos-com-amor",
+    "version": "1.0.0",
+    "description": "App PWA para monitoramento do ciclo menstrual",
+    "main": "index.js",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    },
+    "dependencies": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+      "@vitejs/plugin-react": "^3.0.0",
+      "vite": "^4.0.0"
+    },
+    "keywords": [
+      "pwa",
+      "react",
+      "ciclos",
+      "menstrual"
+    ],
+    "author": "Victor Hugo Fiuza Garcia",
+    "license": "MIT",
+    "browserslist": "> 0.2%, not dead, not op_mini all",
+    "homepage": "https://victorprogramador.github.io/ciclos-com-amor",
+    "repository": {
+      "type": "git",
+      "url": "https://victorprogramador.github.io/ciclos-com-amor"
+    }
+  }
+  
