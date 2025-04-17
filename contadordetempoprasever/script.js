@@ -68,13 +68,18 @@ function setTargetDate(dateString, timeString) {
       windowHeight: document.documentElement.clientHeight,
       useCORS: true,
       scale: 2 // melhora a qualidade da imagem capturada
-    }).then(canvas => {
-      const link = document.createElement("a");
-      link.download = "captura_timer.png";
-      link.href = canvas.toDataURL("image/png");
-      link.click();
+    }).then(canvas => { 
+      canvas.toBlob(blob => {
+        const item = new ClipboardItem({ "image/png": blob });
+        navigator.clipboard.write([item]).then(() => {
+          alert("Imagem copiada para a área de transferência! 🥰");
+        }).catch(err => {
+          console.error("Erro ao copiar para a área de transferência:", err);
+          alert("Erro ao copiar a imagem 😢");
+        });
+      });
     });
-  });
+  });  
   
   document.getElementById("newDateForm").addEventListener("submit", function (e) {
     e.preventDefault();
