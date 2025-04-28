@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const startDate = new Date(dateString);
     const now = new Date();
 
+    // Subtrair 1 dia do "agora" para que o dia inicial seja o dia 0
+    now.setDate(now.getDate() - 1);
+
     let years = now.getFullYear() - startDate.getFullYear();
     let months = now.getMonth() - startDate.getMonth();
     let days = now.getDate() - startDate.getDate();
